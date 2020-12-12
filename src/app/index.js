@@ -1,13 +1,10 @@
 const Koa = require('koa')
-const Router = require('koa-router')
+const morgan = require('koa-morgan')
+const router = require('routing')
 
 const app = new Koa()
-const router = Router()
 
-router.get('/test', ctx => {
-  ctx.body = 'test'
-})
-
+app.use(morgan('combined'))
 app.use(router.routes())
 
 exports.start = async () => {
