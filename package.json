@@ -5,15 +5,17 @@
   "main": "src/index.js",
   "scripts": {
     "start": "NODE_PATH=src node src/index.js",
-    "watch": "NODE_PATH=src nodemon src/index.js"
+    "dev": "NODE_PATH=src nodemon src/index.js"
   },
   "author": "Robin Vriens <robinvriens98@outlook.com>",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "enforce-node-path": "^1.0.0",
     "koa": "^2.13.0",
     "koa-morgan": "^1.0.1",
     "koa-router": "^10.0.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1"
   }
 }
